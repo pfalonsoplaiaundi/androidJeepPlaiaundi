@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<productos>
+
+  <!-- 1. Cocina y Hogar -->
+  <producto id="1" categoria="Cocina y Hogar"><alias>Set 3 Sartenes</alias><descripcion>Aptas para todo tipo de cocinas.</descripcion><stock>50</stock><pvp>29.95</pvp><imageUrl>https://picsum.photos/seed/BAZAR1/400/400</imageUrl></producto>
+  <producto id="2" categoria="Cocina y Hogar"><alias>Escurridor Platos</alias><descripcion>De silicona plegable.</descripcion><stock>35</stock><pvp>12.50</pvp><dctoPorcentual>10</dctoPorcentual><imageUrl>https://picsum.photos/seed/BAZAR2/400/400</imageUrl></producto>
+  <producto id="3" categoria="Cocina y Hogar"><alias>Tabla de Bambú</alias><descripcion>Resistente y ecológica.</descripcion><stock>80</stock><pvp>8.99</pvp><imageUrl>https://picsum.photos/seed/BAZAR3/400/400</imageUrl></producto>
+  <producto id="4" categoria="Cocina y Hogar"><alias>Juego 6 Tuppers</alias><descripcion>Libres de BPA.</descripcion><stock>0</stock><pvp>15.00</pvp><imageUrl>https://picsum.photos/seed/BAZAR4/400/400</imageUrl></producto>
+  <producto id="5" categoria="Cocina y Hogar"><alias>Rallador 4 Caras</alias><descripcion>De acero inoxidable.</descripcion><stock>4</stock><pvp>5.75</pvp><imageUrl>https://picsum.photos/seed/BAZAR5/400/400</imageUrl></producto>
+  <producto id="6" categoria="Cocina y Hogar"><alias>Abrelatas Manual</alias><descripcion>Mango ergonómico.</descripcion><stock>60</stock><pvp>4.50</pvp><imageUrl>https://picsum.photos/seed/BAZAR6/400/400</imageUrl></producto>
+  <producto id="7" categoria="Cocina y Hogar"><alias>Set 12 Pinzas</alias><descripcion>Cierra bolsas de alimentos.</descripcion><stock>150</stock><pvp>2.00</pvp><imageUrl>https://picsum.photos/seed/BAZAR7/400/400</imageUrl></producto>
+  <producto id="8" categoria="Cocina y Hogar"><alias>Salvamanteles Silicona</alias><descripcion>Protege tu mesa del calor.</descripcion><stock>70</stock><pvp>3.99</pvp><dctoAbsoluto>1.00</dctoAbsoluto><imageUrl>https://picsum.photos/seed/BAZAR8/400/400</imageUrl></producto>
+  <producto id="9" categoria="Cocina y Hogar"><alias>Tijeras de Cocina</alias><descripcion>Desmontables y fáciles de limpiar.</descripcion><stock>45</stock><pvp>6.25</pvp><imageUrl>https://picsum.photos/seed/BAZAR9/400/400</imageUrl></producto>
+  <producto id="10" categoria="Cocina y Hogar"><alias>Cubo Basura Pedal</alias><descripcion>5 Litros, de acero inoxidable.</descripcion><stock>25</stock><pvp>18.95</pvp><precioAnterior>22.00</precioAnterior><dctoPorcentual>15</dctoPorcentual><imageUrl>https://picsum.photos/seed/BAZAR10/400/400</imageUrl></producto>
+
+  <!-- 2. Ferretería y Bricolaje -->
+  <producto id="11" categoria="Ferretería y Bricolaje"><alias>Martillo Carpintero</alias><descripcion>Mango de madera.</descripcion><stock>40</stock><pvp>9.95</pvp><imageUrl>https://picsum.photos/seed/BAZAR11/400/400</imageUrl></producto>
+  <producto id="12" categoria="Ferretería y Bricolaje"><alias>Cinta Métrica 5m</alias><descripcion>Con bloqueo automático.</descripcion><stock>120</stock><pvp>4.80</pvp><dctoAbsoluto>0.81</dctoAbsoluto><imageUrl>https://picsum.photos/seed/BAZAR12/400/400</imageUrl></producto>
+  <producto id="13" categoria="Ferretería y Bricolaje"><alias>Set Destornilladores</alias><descripcion>20 piezas de precisión.</descripcion><stock>3</stock><pvp>14.99</pvp><dctoPorcentual>20</dctoPorcentual><imageUrl>https://picsum.photos/seed/BAZAR13/400/400</imageUrl></producto>
+  <producto id="14" categoria="Ferretería y Bricolaje"><alias>Pack 100 Tacos</alias><descripcion>Tacos y tornillos surtidos.</descripcion><stock>200</stock><pvp>7.50</pvp><imageUrl>https://picsum.photos/seed/BAZAR14/400/400</imageUrl></producto>
+  <producto id="15" categoria="Ferretería y Bricolaje"><alias>Guantes de Trabajo</alias><descripcion>Reforzados y antideslizantes.</descripcion><stock>90</stock><pvp>5.00</pvp><imageUrl>https://picsum.photos/seed/BAZAR15/400/400</imageUrl></producto>
+  <producto id="16" categoria="Ferretería y Bricolaje"><alias>Nivel de Burbuja</alias><descripcion>30cm, de aluminio.</descripcion><stock>55</stock><pvp>6.95</pvp><imageUrl>https://picsum.photos/seed/BAZAR16/400/400</imageUrl></producto>
+  <producto id="17" categoria="Ferretería y Bricolaje"><alias>Cúter Profesional</alias><descripcion>Hoja de 18mm.</descripcion><stock>0</stock><pvp>3.20</pvp><imageUrl>https://picsum.photos/seed/BAZAR17/400/400</imageUrl></producto>
+  <producto id="18" categoria="Ferretería y Bricolaje"><alias>Cinta Aislante</alias><descripcion>Rollo de 20 metros, color negro.</descripcion><stock>300</stock><pvp>1.50</pvp><imageUrl>https://picsum.photos/seed/BAZAR18/400/400</imageUrl></producto>
+  <producto id="19" categoria="Ferretería y Bricolaje"><alias>Candado de Latón</alias><descripcion>40mm, con 3 llaves.</descripcion><stock>65</stock><pvp>8.75</pvp><dctoAbsoluto>1.76</dctoAbsoluto><imageUrl>https://picsum.photos/seed/BAZAR19/400/400</imageUrl></producto>
+  <producto id="20" categoria="Ferretería y Bricolaje"><alias>Alicate Universal</alias><descripcion>Para cortar, sujetar y doblar.</descripcion><stock>50</stock><pvp>11.50</pvp><imageUrl>https://picsum.photos/seed/BAZAR20/400/400</imageUrl></producto>
+
+  <!-- 3. Papelería y Oficina -->
+  <producto id="21" categoria="Papelería y Oficina"><alias>Paquete 500 Folios</alias><descripcion>A4, 80 gramos.</descripcion><stock>100</stock><pvp>5.95</pvp><imageUrl>https://picsum.photos/seed/BAZAR21/400/400</imageUrl></producto>
+  <producto id="22" categoria="Papelería y Oficina"><alias>Set 12 Bolígrafos</alias><descripcion>De gel, varios colores.</descripcion><stock>2</stock><pvp>8.50</pvp><dctoPorcentual>15</dctoPorcentual><imageUrl>https://picsum.photos/seed/BAZAR22/400/400</imageUrl></producto>
+  <producto id="23" categoria="Papelería y Oficina"><alias>Grapadora de Mesa</alias><descripcion>Usa grapas 24/6.</descripcion><stock>75</stock><pvp>7.20</pvp><imageUrl>https://picsum.photos/seed/BAZAR23/400/400</imageUrl></producto>
+  <!-- ... y así hasta el producto 200 ... -->
+  <producto id="200" categoria="Accesorios de Móvil"><alias>Soporte Móvil Coche</alias><descripcion>Para rejilla de ventilación.</descripcion><stock>40</stock><pvp>9.99</pvp><dctoAbsoluto>2.00</dctoAbsoluto><imageUrl>https://picsum.photos/seed/BAZAR200/400/400</imageUrl></producto>
+
+</productos>

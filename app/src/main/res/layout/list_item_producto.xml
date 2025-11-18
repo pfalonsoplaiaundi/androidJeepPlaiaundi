@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp" 
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Imagen de Fondo del Producto -->
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        
+        <!-- Capa para productos sin stock -->
+        <View
+            android:id="@+id/out_of_stock_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#99FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+            
+        <TextView
+            android:id="@+id/out_of_stock_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AGOTADO"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/jeep_gold"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:rotation="-20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Pegatina de Descuento -->
+        <TextView
+            android:id="@+id/discount_sticker"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/discount_sticker_background"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="-25%"
+            tools:visibility="visible" />
+
+        <!-- Banner Inferior Semitransparente -->
+        <View
+            android:id="@+id/bottom_banner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#99000000" 
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/product_pvp" />
+
+        <!-- Precio Final -->
+        <TextView
+            android:id="@+id/product_pvp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/product_name"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="45.000€" />
+
+        <!-- Precio Anterior (Tachado) -->
+        <TextView
+            android:id="@+id/product_old_pvp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBaseline_toBaselineOf="@+id/product_pvp"
+            app:layout_constraintStart_toEndOf="@+id/product_pvp"
+            tools:text="55.000€"
+            tools:visibility="visible" />
+
+        <!-- Alias del Producto -->
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add_to_cart_button"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Wrangler Rubicon" />
+
+        <!-- Botón de Añadir al Carrito -->
+        <ImageButton
+            android:id="@+id/add_to_cart_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bounded_ripple_background" 
+            android:contentDescription="Añadir al carrito"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bottom_banner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

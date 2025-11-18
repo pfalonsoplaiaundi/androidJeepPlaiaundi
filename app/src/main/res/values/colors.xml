@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="jeep_red">#FFBA0000</color>
+    <color name="jeep_gold">#FFFFD700</color>
 </resources>

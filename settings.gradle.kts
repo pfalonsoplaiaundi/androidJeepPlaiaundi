@@ -16,9 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") } // Sintaxis corregida para Kotlin DSL
     }
 }
 
 rootProject.name = "Jeep"
 include(":app")
- 
+
