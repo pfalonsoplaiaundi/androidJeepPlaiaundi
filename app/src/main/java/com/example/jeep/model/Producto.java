@@ -21,29 +21,18 @@ public class Producto implements Serializable {
 
     public Producto() {}
 
+    /**
+     * Calcula y devuelve el precio final del producto aplicando el mejor descuento disponible.
+     * @return El precio de venta final.
+     */
     public double getFinalPrice() {
-        double pvp = getPvp();
-        double discount = 0;
-        if (dctoAbsoluto != null && dctoAbsoluto > 0) {
-            discount = dctoAbsoluto;
-        }
+        double finalPrice = pvp;
         if (dctoPorcentual != null && dctoPorcentual > 0) {
-            double percentageDiscountValue = pvp * (dctoPorcentual / 100.0);
-            if (percentageDiscountValue > discount) {
-                discount = percentageDiscountValue;
-            }
+            finalPrice = pvp * (1 - (dctoPorcentual / 100.0));
+        } else if (dctoAbsoluto != null && dctoAbsoluto > 0) {
+            finalPrice = pvp - dctoAbsoluto;
         }
-        return pvp - discount;
-    }
-
-    public Double getDisplayOldPrice() {
-        if (precioAnterior != null && precioAnterior > getFinalPrice()) {
-            return precioAnterior;
-        }
-        if (getFinalPrice() < getPvp()) {
-            return getPvp();
-        }
-        return null;
+        return Math.max(finalPrice, 0); // Asegura que el precio no sea negativo
     }
 
     // --- GETTERS Y SETTERS ---

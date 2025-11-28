@@ -92,10 +92,9 @@ public class DetalleProductoActivity extends AppCompatActivity {
 
         // Usa los métodos del modelo para mostrar los precios correctos
         pvp.setText(currencyFormat.format(producto.getFinalPrice()));
-        Double oldPriceValue = producto.getDisplayOldPrice();
-        if (oldPriceValue != null) {
+        if (producto.getPrecioAnterior() != null && producto.getPrecioAnterior() > 0) {
             oldPvp.setVisibility(View.VISIBLE);
-            oldPvp.setText(currencyFormat.format(oldPriceValue));
+            oldPvp.setText(currencyFormat.format(producto.getPrecioAnterior()));
             oldPvp.setPaintFlags(oldPvp.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
         } else {
             oldPvp.setVisibility(View.GONE);

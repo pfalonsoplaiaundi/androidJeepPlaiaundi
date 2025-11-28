@@ -8,17 +8,14 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.jeep.DetalleProductoActivity;
 import com.example.jeep.R;
 import com.example.jeep.cart.CartItem;
 import com.example.jeep.cart.ShoppingCart;
 import com.example.jeep.model.Producto;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,12 +25,34 @@ import java.util.List;
  */
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder> {
 
+    // -----------------------------------------------------------------------------------
+    // Variables
+
+    /** Contexto */
     private final Context context;
+
+    /** Carrito */
     private List<CartItem> cartItems = new ArrayList<>();
 
+    // Fin variables
+    // -----------------------------------------------------------------------------------
+
+    // -----------------------------------------------------------------------------------
+    // Constructor
+
+    /**
+     * Constructor del adaptador.
+     * @param context Contexto de la aplicación.
+     */
     public CartAdapter(Context context) {
         this.context = context;
     }
+
+    // Fin constructor
+    // -----------------------------------------------------------------------------------
+
+    // -----------------------------------------------------------------------------------
+    // Setters y getters
 
     /**
      * Actualiza la lista de items que muestra el adaptador.
@@ -44,6 +63,20 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         notifyDataSetChanged();
     }
 
+    // Fin setters y getters
+    // -----------------------------------------------------------------------------------
+
+    // -----------------------------------------------------------------------------------
+    // Metodos sobreescritos
+
+    /**
+     * Crea una nueva vista de item.
+     *
+     * @param parent   The ViewGroup into which the new View will be added after it is bound to
+     *                 an adapter position.
+     * @param viewType The view type of the new View.
+     * @return
+     */
     @NonNull
     @Override
     public CartViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -108,14 +141,31 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         return cartItems != null ? cartItems.size() : 0;
     }
 
+    // Fin metodos sobreescritos
+    // -----------------------------------------------------------------------------------
+
+    // -----------------------------------------------------------------------------------
+    // Clases internas
+
     /**
      * ViewHolder para un item en la lista del carrito.
      */
     static class CartViewHolder extends RecyclerView.ViewHolder {
+
+        /** Imagenes */
         ImageView productImage;
+
+        /** Textos */
         TextView productName, productPrice, itemQuantity, subtotal, lowStockWarning;
+
+        /** Botones de imange */
         ImageButton incrementButton, decrementButton, removeItemButton;
 
+        /**
+         * Constructor del ViewHolder.
+         *
+         * @param itemView
+         */
         public CartViewHolder(@NonNull View itemView) {
             super(itemView);
             productImage = itemView.findViewById(R.id.cart_product_image);
@@ -129,4 +179,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
             removeItemButton = itemView.findViewById(R.id.cart_remove_item_button);
         }
     }
+
+    // Fin clases internas
+    // -----------------------------------------------------------------------------------
 }
