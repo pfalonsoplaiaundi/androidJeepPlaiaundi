@@ -81,8 +81,8 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:background="@drawable/button_background_red"
-                android:rotation="90"
-                android:src="@android:drawable/ic_input_add"
+                android:rotation="0"
+                android:src="@drawable/ic_sub"
                 app:tint="@color/jeep_gold" />
 
             <TextView
